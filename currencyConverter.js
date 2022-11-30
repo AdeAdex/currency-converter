@@ -10,22 +10,22 @@ function navDropdown() {
 let txt = ""
 function money() {
   if (amount.value == "") {
-    myOutput.innerHTML = `The cant be empty`;
+    myOutput.innerHTML = `The input field can't be empty`;
   } else if (amount.value >= 1) {
     if (myOptions.value == 0.96) {
-      myOutput.innerHTML = `${amount.value} US dollar is eqivallent to ${(myOptions.value * amount.value).toFixed(2)} ${txt="Euros"}`;
+      myOutput.innerHTML = `${amount.value} US dollar is equivalent to ${(myOptions.value * amount.value).toFixed(2)} ${txt="Euros"}`;
       para.innerHTML = `$1 = €  ${myOptions.value}`;
     } else if (myOptions.value == 442.66) {
-      myOutput.innerHTML = `${amount.value} US dollar is eqivallent to ${(myOptions.value * amount.value).toFixed(2)} ${txt="Nigeria Naira"}`;
+      myOutput.innerHTML = `${amount.value} US dollar is equivalent to ${(myOptions.value * amount.value).toFixed(2)} ${txt="Nigeria Naira"}`;
       para.innerHTML = `$1 = ₦  ${myOptions.value}`;
     } else if (myOptions.value == 0.84) {
-      myOutput.innerHTML = `${amount.value} US dollar is eqivallent to ${(myOptions.value * amount.value).toFixed(2)} ${txt="British Pound"}`;
+      myOutput.innerHTML = `${amount.value} US dollar is equivalent to ${(myOptions.value * amount.value).toFixed(2)} ${txt="British Pound"}`;
       para.innerHTML = `$1 = £  ${myOptions.value}`;
     } else if (myOptions.value == 7.11) {
-      myOutput.innerHTML = `${amount.value} US dollar is eqivallent to ${(myOptions.value * amount.value).toFixed(2)} ${txt="Chinese Yuan"}`;
+      myOutput.innerHTML = `${amount.value} US dollar is equivalent to ${(myOptions.value * amount.value).toFixed(2)} ${txt="Chinese Yuan"}`;
       para.innerHTML = `$1 = ¥  ${myOptions.value}`;
     } else if (myOptions.value == 24.54) {
-      myOutput.innerHTML = `${amount.value} US dollar is eqivallent to ${(myOptions.value * amount.value).toFixed(2)} ${txt="Egyptian Pound"}`;
+      myOutput.innerHTML = `${amount.value} US dollar is equivalent to ${(myOptions.value * amount.value).toFixed(2)} ${txt="Egyptian Pound"}`;
       para.innerHTML = `$1 = €  ${myOptions.value}`;
     }
   }
@@ -36,22 +36,22 @@ function money() {
 
 function lookup() {
   if (amount.value == "") {
-    myOutput.innerHTML = `The input field cant be empty`;
+    myOutput.innerHTML = `The input field can't be empty`;
   } else if (amount.value >= 1) {
     if (myOptions.value == 0.96) {
-      myOutput.innerHTML = `${amount.value} US dollar is eqivallent to ${(myOptions.value * amount.value).toFixed(2)} ${txt="Euros"}`;
+      myOutput.innerHTML = `${amount.value} US dollar is equivalent to ${(myOptions.value * amount.value).toFixed(2)} ${txt="Euros"}`;
       para.innerHTML = `$1 = €  ${myOptions.value}`;
     } else if (myOptions.value == 442.66) {
-      myOutput.innerHTML = `${amount.value} US dollar is eqivallent to ${(myOptions.value * amount.value).toFixed(2)} ${txt="Nigeria Naira"}`;
+      myOutput.innerHTML = `${amount.value} US dollar is equivalent to ${(myOptions.value * amount.value).toFixed(2)} ${txt="Nigeria Naira"}`;
       para.innerHTML = `$1 = ₦  ${myOptions.value}`;
     } else if (myOptions.value == 0.84) {
-      myOutput.innerHTML = `${amount.value} US dollar is eqivallent to ${(myOptions.value * amount.value).toFixed(2)} ${txt="British Pound"}`;
+      myOutput.innerHTML = `${amount.value} US dollar is equivalent to ${(myOptions.value * amount.value).toFixed(2)} ${txt="British Pound"}`;
       para.innerHTML = `$1 = £  ${myOptions.value}`;
     } else if (myOptions.value == 7.11) {
-      myOutput.innerHTML = `${amount.value} US dollar is eqivallent to ${(myOptions.value * amount.value).toFixed(2)} ${txt="Chinese Yuan"}`;
+      myOutput.innerHTML = `${amount.value} US dollar is equivalent to ${(myOptions.value * amount.value).toFixed(2)} ${txt="Chinese Yuan"}`;
       para.innerHTML = `$1 = ¥  ${myOptions.value}`;
     } else if (myOptions.value == 24.54) {
-      myOutput.innerHTML = `${amount.value} US dollar is eqivallent to ${(myOptions.value * amount.value).toFixed(2)} ${txt="Egyptian Pound"}`;
+      myOutput.innerHTML = `${amount.value} US dollar is equivalent to ${(myOptions.value * amount.value).toFixed(2)} ${txt="Egyptian Pound"}`;
       para.innerHTML = `$1 = €  ${myOptions.value}`;
     }
   } else if (amount.value <= 0) {
@@ -94,14 +94,14 @@ amountFrom.addEventListener('input', search);*/
 // var egyptianPoundRate = 24.54;
 // function convertTOEuro() {
 //   if (euroRate === 0.96) {
-//     myOutput.innerHTML = `${amount.value} US dollar is eqivallent to ${(euroRate * amount.value).toFixed(2)} Euros`;
+//     myOutput.innerHTML = `${amount.value} US dollar is equivalent to ${(euroRate * amount.value).toFixed(2)} Euros`;
 //     para.innerHTML = `$1 = €  ${euroRate}`; 
 //   }
 // };
 
 // function convertToNaira() {
 //   if (amount.value >= 1) {
-//     myOutput.innerHTML = `${amount.value} US dollar is eqivallent to ${(nairaRate * amount.value).toFixed(2)} Nigerian Naira`;
+//     myOutput.innerHTML = `${amount.value} US dollar is equivalent to ${(nairaRate * amount.value).toFixed(2)} Nigerian Naira`;
 //     para.innerHTML = `$1 = ₦  ${nairaRate}`; 
 //   } else if (amount.value === "") {
 //     myOutput.innerHTML = `The field cant be empty`;
@@ -110,7 +110,7 @@ amountFrom.addEventListener('input', search);*/
 
 // function convertToBritishPound() {
 //   if (britishPoundRate === 0.84) {
-//     myOutput.innerHTML = `${amount.value} US dollar is eqivallent to ${(britishPoundRate * amount.value).toFixed(2)} British Pound`;
+//     myOutput.innerHTML = `${amount.value} US dollar is equivalent to ${(britishPoundRate * amount.value).toFixed(2)} British Pound`;
 //     para.innerHTML = `$1 = £ ${britishPoundRate}`  
 //   } else if (amount.value === "") {
 //     myOutput.innerHTML = `The field cant be empty`;
@@ -119,7 +119,7 @@ amountFrom.addEventListener('input', search);*/
 
 // function convertToYuan() {
 //   if (yuanRate === 7.11) {
-//     myOutput.innerHTML = `${amount.value} US dollar is eqivallent to  ${(yuanRate * amount.value).toFixed(2)} Chinese Yuan`;
+//     myOutput.innerHTML = `${amount.value} US dollar is equivalent to  ${(yuanRate * amount.value).toFixed(2)} Chinese Yuan`;
 //     para.innerHTML = `$1 = ¥ ${yuanRate}`;
 //   } else if (amount.value === "") {
 //     myOutput.innerHTML = `The field cant be empty`;
@@ -128,7 +128,7 @@ amountFrom.addEventListener('input', search);*/
 
 // function convertToEgyptianPound() {
 //   if (egyptianPoundRate === 24.54) {
-//     myOutput.innerHTML = `${amount.value} US dollar is eqivallent to ${(egyptianPoundRate * amount.value).toFixed(2)} Egyptian Pound`;
+//     myOutput.innerHTML = `${amount.value} US dollar is equivalent to ${(egyptianPoundRate * amount.value).toFixed(2)} Egyptian Pound`;
 //     para.innerHTML = `$1 = €  ${egyptianPoundRate}`; 
 //   }
 // };
