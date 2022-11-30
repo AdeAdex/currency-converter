@@ -447,7 +447,7 @@ li img {
 
 
 
-@media screen and (min-width: 600px) and (max-width: 991px) {
+@media screen and (min-width: 600px) and (max-width: 1250px) {
   body {
     padding-top: 10px;
   }
@@ -616,7 +616,7 @@ li img {
 
 
 
-@media screen and (min-width: 600px) and (max-width: 991px) {
+@media screen and (min-width: 600px) and (max-width: 1250px) {
   
   .nav.responsive {
     position: absolute;
