@@ -1,96 +1,99 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="fontawesome-free-6.1.1-web/css/all.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="currencyConverter.css">
-	<title>Currency Converter</title>
-</head>
-<body>
-	<div class="main-div">
-		<div class="logo-and-acc-type-btn">
-			<img src="ade.png">
-		</div>
-		
-		<nav id="navBar" class="nav">
-			<a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="navDropdown()">&#9776; </a>
-			<div class="dropdown-container">
-				<div class="acc-type-btn">
-					<a href=""><button>Personal</button></a>
-					<a href=""><button>Business</button></a>
-				</div>
-				<div class="dropdowns">
-					<a href=""><button>Send Money</button></a>
-					<a href=""><button>Converter</button></a>
-					<a href=""><button>Currency API</button></a>
-					<a href=""><button>Tools</button></a>
-					<a href=""><button>Resources</button></a>
-				</div>
-				<div class="sign-option">
-					<a href=""><button class="sign-in">Sign In</button></a>
-					<a href=""><button class="active">Register</button></a>
-				</div>
-			</div>
-		</nav>
-	</div>
-	<div class="main-container">
-		<h1>Adex Currency Converter</h1>
-		<div class="conversion-container">
-			<div class="conversion-col">
-				<div class="col">
-					<label>Amount in Dollar</label>
-					<input type="text" name="" placeholder="Enter some value" id="amount" onkeyup="lookup()">
-				</div>
-				<div class="col">
-					<!--<span>From</span>
-					<div class="countries">
-  						<input type="text" name="" placeholder="Type to search" id="amountFrom">
-						  <ul class="list-country" id="listCountry">
-						    <a href=""><li><img src="pic\USA.png"><span>USD-US Dollar</span></li></a>
-						    <a href=""><li><img src="pic\euro.png"><span>EUR-Euro</span></li></a>
-						    <a href=""><li><img src="pic\nigeria.png"><span>NGN-Nigeria Naira</span></li></a>
-						    <li>about</li>
-						    <li>above</li>
-						    <li>accept</li>
-						    <li>according</li>
-						    <li>account</li>
-						    <li>across</li>
-						    <li>act</li>
-						    <li>action</li>
-						    <li>activity</li>
-						    <li>actually</li>
-						    <li>adex</li>
-						    <li>address</li>
-						    <li>administration</li>
-						    <li>admit</li>
-						    <li>adult</li>
-						    <li>affect</li>
-						    <li>after</li>
-						    <li>again</li>
-  						</ul>
-					</div>!-->
-				</div>
-				<div class="col">
-					<label>To</label>
-					<select name="" id="myOptions" onchange="money()">
-						<option value="0.96"><img src="pic\euro.png"><span id="tries">EUR-Euro</span></option>
-						<option value="442.66"><img src="pic\nigeria.png"><span id="tries">NGN-Nigeria Naira</span></option>
-						<option value="0.84"><img src="pic\USA.png"><span id="tries">GBP-British Pound</span></option>
-						<option value="7.11"><img src="pic\USA.png"><span>CNY-Chinese Yuan</span></option>
-						<option value="24.54"><img src="pic\USA.png"><span>EGP-Egyptian Pound</span></option>
-					</select>
-				</div>
-			</div>
-			<div id="myOutput"></div>
-			<p id="para"></p>
-			<div class="cookies">
-				<div>We use the mid-market rate for our Converter. This is for informational purposes only. You won’t receive this rate when sending money. <a href="">Check send rates</a></div>
-			</div>
-		</div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="fontawesome-free-6.1.1-web/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="currencyConverter.css" />
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <div class="main-div">
+      <div class="logo-and-acc-type-btn">
+        <img src="ade.png" />
+      </div>
 
-	</div>
-	
-	<script type="text/javascript" src="currencyConverter.js"></script>
-</body>
+      <nav id="navBar" class="nav">
+        <a
+          href="javascript:void(0);"
+          style="font-size: 25px"
+          class="icon"
+          onclick="navDropdown()"
+          >&#9776;
+        </a>
+        <div class="dropdown-container">
+          <div class="acc-type-btn">
+            <a href=""><button>Personal</button></a>
+            <a href=""><button>Business</button></a>
+          </div>
+          <div class="dropdowns">
+            <a href=""><button>Send Money</button></a>
+            <a href=""><button>Converter</button></a>
+            <a href=""><button>Currency API</button></a>
+            <a href=""><button>Tools</button></a>
+            <a href=""><button>Resources</button></a>
+          </div>
+          <div class="sign-option">
+            <a href=""><button class="sign-in">Sign In</button></a>
+            <a href=""><button class="active">Register</button></a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="main-container">
+      <h1>Adex Currency Converter</h1>
+      <div class="conversion-container">
+        <div class="conversion-col">
+          <div class="col">
+            <label>Amount in Dollar</label>
+            <input
+              type="text"
+              name=""
+              placeholder="Enter some value"
+              id="amount"
+              onkeyup="lookup()"
+            />
+          </div>
+          <div class="col">
+ 
+          </div>
+          <div class="col">
+            <label>To</label>
+            <select name="" id="myOptions" onchange="money()">
+              <option value="0.95">
+                <img src="pic\euro.png" /><span id="tries">EUR-Euro</span>
+              </option>
+              <option value="795.43">
+                <img src="pic\nigeria.png" /><span id="tries"
+                  >NGN-Nigeria Naira</span
+                >
+              </option>
+              <option value="0.82">
+                <img src="pic\USA.png" /><span id="tries"
+                  >GBP-British Pound</span
+                >
+              </option>
+              <option value="7.31">
+                <img src="pic\USA.png" /><span>CNY-Chinese Yuan</span>
+              </option>
+              <option value="30.93">
+                <img src="pic\USA.png" /><span>EGP-Egyptian Pound</span>
+              </option>
+            </select>
+          </div>
+        </div>
+        <div id="myOutput"></div>
+        <p id="para"></p>
+        <div class="cookies">
+          <div>
+            We use the mid-market rate for our Converter. This is for
+            informational purposes only. You won’t receive this rate when
+            sending money. <a href="">Check send rates</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="currencyConverter.js"></script>
+  </body>
 </html>
