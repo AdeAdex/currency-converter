@@ -24,7 +24,7 @@ function money() {
     myOutput.innerHTML = `${amount.value} US dollar is equivalent to ${(
       selectedValue * amount.value
     ).toFixed(2)} ${currencyName}`;
-    para.innerHTML = `$1 = ${currencyName} ${selectedValue}`;
+    para.innerHTML = `$1 = ${selectedValue} ${currencyName}`;
   }
 }
 
