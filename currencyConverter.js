@@ -39,7 +39,7 @@ function lookup() {
     myOutput.innerHTML = `${amount.value} US dollar is equivalent to ${(
       selectedValue * amount.value
     ).toFixed(2)} ${currencyName}`;
-    para.innerHTML = `$1 = ${currencyName} ${selectedValue}`;
+    para.innerHTML = `$1 = ${selectedValue} ${currencyName}`;
   } else if (amount.value <= 0) {
     myOutput.innerHTML = `Please enter an amount greater than 0`;
   } else if (isNaN(amount.value)) {
