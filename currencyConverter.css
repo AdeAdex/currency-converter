@@ -155,7 +155,7 @@ button:hover {
 }
 
 #myOutput {
-  color: black;
+  color: #2E3C57;
   font-size: 30px;
   margin-bottom: 30px;
   padding-left: 60px;
@@ -440,7 +440,7 @@ button:hover {
   }
 
   #myOutput {
-    color: black;
+    color: #2E3C57;
     font-size: 20px;
     margin-bottom: 30px;
     padding-left: 50px;
@@ -594,7 +594,7 @@ button:hover {
   }
 
   #myOutput {
-    color: black;
+    color: #2E3C57;
     font-size: 20px;
     margin-bottom: 30px;
     padding-left: 50px;
