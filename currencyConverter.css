@@ -402,6 +402,7 @@ li img {
     border-color: deepskyblue;
     font-size: 15px;
     cursor: pointer;
+    width: 100%;
   }
 
   #myOutput {
