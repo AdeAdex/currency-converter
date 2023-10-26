@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -43,7 +43,9 @@ nav .icon {
   justify-content: space-around;
 }
 
-.logo-and-acc-type-btn, .dropdowns, .sign-option {
+.logo-and-acc-type-btn,
+.dropdowns,
+.sign-option {
   display: flex;
   justify-content: space-around;
 }
@@ -51,7 +53,6 @@ nav .icon {
 button {
   cursor: pointer;
 }
-
 
 .logo-and-acc-type-btn {
   display: flex;
@@ -76,14 +77,14 @@ img {
   border-radius: 6px;
   border: none;
   background-color: unset;
-}  
+}
 
 a {
   text-decoration: none;
 }
 
-
-.dropdowns button, .sign-in {
+.dropdowns button,
+.sign-in {
   padding: 8px 15px;
   color: white;
   font-size: 12px;
@@ -101,11 +102,9 @@ a {
   background-color: rgb(0, 113, 235);
 }
 
-
 button:hover {
-  background-color: rgba(242, 247, 254, .2);
+  background-color: rgba(242, 247, 254, 0.2);
 }
-
 
 .main-container {
   margin-top: 80px;
@@ -144,7 +143,7 @@ button:hover {
   padding-bottom: 5px;
 }
 
-.col input{
+.col input {
   padding: 15px 5px;
   border-radius: 5px;
   border-color: deepskyblue;
@@ -160,7 +159,7 @@ button:hover {
   font-size: 30px;
   margin-bottom: 30px;
   padding-left: 60px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 #para {
@@ -197,47 +196,7 @@ button:hover {
   border-radius: 8px;
   color: white;
 }
-/*
-.countries {
-  background-color: pink;
-  width: 100%;
-}
 
-.list-country {
-  width: 19%;
-  position: absolute;
-  background-color: whitesmoke;
-  list-style: none;
-  height: 25em;
-  overflow-y: scroll;
-  display: none
-}
-
-.list-country li {
-  cursor: pointer;
-  background-color: ;
-  height: 40px;
-  line-height: 40px;
-  color: black;
-  padding-left: 20px;
-  display: ;
-}
-
-.list-country li:hover {
-  background-color: lightgray;
-}
-
-li img {
-  width: 25px;
-  height: 17px;
-  margin: 15px 5px 0px 0px;
-  border-radius: 3px;
-}
-
-
-.countries input {
-  width: 100%;
-}*/
 
 #myOptions {
   padding: 15px 25px;
@@ -269,6 +228,92 @@ li img {
 
 
 
+/* Style for if i want to use image in the select option that i design with ul and li */
+
+
+
+
+/* Style for the custom dropdown */
+.custom-dropdown {
+  position: relative;
+  width: 200px; /* Adjust the width as needed */
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  user-select: none;
+}
+
+.selected-option {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.selected-option img {
+  max-width: 24px; /* Adjust the size of the flag image */
+  margin-right: 10px;
+}
+
+.dropdown-options {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px; /* Set a maximum height for the dropdown */
+  overflow-y: auto; /* Add a scrollbar when options exceed the maximum height */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+/* Style for each option in the dropdown */
+.dropdown-options li {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Hover effect for the options */
+.dropdown-options li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Show the dropdown options when the custom dropdown is clicked */
+.custom-dropdown.active .dropdown-options {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -295,10 +340,9 @@ li img {
   nav .icon {
     display: block;
   }
-  
+
   .dropdown-container {
     display: none;
-    
   }
 
   .dropdowns {
@@ -311,18 +355,18 @@ li img {
     z-index: 1;
     width: 50%;
   }
-  
+
   img {
     width: 50px;
     height: 50px;
     margin-right: 15px;
   }
-  
+
   .acc-type-btn {
     display: none;
     margin: 20px 0px;
   }
-  
+
   .acc-type-btn button {
     padding: 8px 10px;
     color: white;
@@ -330,9 +374,10 @@ li img {
     border-radius: 6px;
     border: none;
     background-color: unset;
-  }  
-  
-  .dropdowns button, .sign-in {
+  }
+
+  .dropdowns button,
+  .sign-in {
     padding: 8px 15px;
     color: black;
     font-size: 12px;
@@ -341,7 +386,7 @@ li img {
     background-color: unset;
     width: 100%;
   }
-  
+
   .active {
     padding: 8px 15px;
     color: white;
@@ -351,38 +396,26 @@ li img {
     background-color: rgb(0, 113, 235);
     width: 100%;
   }
-  
-  
+
   button:hover {
-    background-color: rgba(242, 247, 254, .2);
+    background-color: rgba(242, 247, 254, 0.2);
   }
-  
-  
+
   .main-container {
     margin-top: 80px;
     width: 100%;
   }
-  
+
   .main-container h1 {
     color: white;
     font-family: cursive;
     text-align: center;
   }
 
-
-
-
-
-
-
-
-
-  
-  
   .conversion-container {
     width: 80%;
   }
-  
+
   .conversion-col {
     width: 100%;
     display: flex;
@@ -390,7 +423,7 @@ li img {
     padding: 50px 50px 30px 50px;
     justify-content: space-around;
   }
-  
+
   .col {
     width: 100%;
     display: grid;
@@ -413,7 +446,7 @@ li img {
     padding-left: 50px;
     padding-right: 50px;
   }
-  
+
   #para {
     padding-left: 50px;
     color: purple;
@@ -422,32 +455,23 @@ li img {
     font-weight: bold;
     margin-bottom: 30px;
   }
-  
+
   .cookies {
     width: 100%;
     padding: 0px 50px 0px 50px;
     display: flex;
     justify-content: space-between;
   }
-  
+
   .cookies div {
     width: 100%;
     font-size: 14px;
   }
-  
+
   .cookies div a {
     color: blue;
   }
 }
-
-
-
-
-
-
-
-
-
 
 @media screen and (min-width: 600px) and (max-width: 1250px) {
   body {
@@ -471,10 +495,9 @@ li img {
   nav .icon {
     display: block;
   }
-  
+
   .dropdown-container {
     display: none;
-    
   }
 
   .dropdowns {
@@ -487,18 +510,18 @@ li img {
     z-index: 1;
     width: 50%;
   }
-  
+
   img {
     width: 50px;
     height: 50px;
     margin-right: 15px;
   }
-  
+
   .acc-type-btn {
     display: none;
     margin: 20px 0px;
   }
-  
+
   .acc-type-btn button {
     padding: 8px 10px;
     color: white;
@@ -506,9 +529,10 @@ li img {
     border-radius: 6px;
     border: none;
     background-color: unset;
-  }  
-  
-  .dropdowns button, .sign-in {
+  }
+
+  .dropdowns button,
+  .sign-in {
     padding: 8px 15px;
     color: black;
     font-size: 12px;
@@ -517,7 +541,7 @@ li img {
     background-color: unset;
     width: 100%;
   }
-  
+
   .active {
     padding: 8px 15px;
     color: white;
@@ -527,38 +551,26 @@ li img {
     background-color: rgb(0, 113, 235);
     width: 100%;
   }
-  
-  
+
   button:hover {
-    background-color: rgba(242, 247, 254, .2);
+    background-color: rgba(242, 247, 254, 0.2);
   }
-  
-  
+
   .main-container {
     margin-top: 80px;
     width: 100%;
   }
-  
+
   .main-container h1 {
     color: white;
     font-family: cursive;
     text-align: center;
   }
 
-
-
-
-
-
-
-
-
-  
-  
   .conversion-container {
     width: 80%;
   }
-  
+
   .conversion-col {
     width: 100%;
     display: flex;
@@ -566,7 +578,7 @@ li img {
     padding: 50px 50px 30px 50px;
     justify-content: space-around;
   }
-  
+
   .col {
     width: 100%;
     display: grid;
@@ -588,7 +600,7 @@ li img {
     padding-left: 50px;
     padding-right: 50px;
   }
-  
+
   #para {
     padding-left: 50px;
     color: purple;
@@ -597,29 +609,25 @@ li img {
     font-weight: bold;
     margin-bottom: 30px;
   }
-  
+
   .cookies {
     width: 100%;
     padding: 0px 50px 0px 50px;
     display: flex;
     justify-content: space-between;
   }
-  
+
   .cookies div {
     width: 100%;
     font-size: 14px;
   }
-  
+
   .cookies div a {
     color: blue;
   }
 }
 
-
-
-
 @media screen and (min-width: 600px) and (max-width: 1250px) {
-  
   .nav.responsive {
     position: absolute;
     width: 100%;
@@ -687,12 +695,11 @@ li img {
     justify-content: unset;
   }
 
-  
   a {
     margin: auto 0px;
     text-decoration: none;
   }
-  
+
   .dropdowns button {
     width: auto;
     padding-left: 0;
@@ -702,32 +709,15 @@ li img {
     border-bottom: 2px solid gray;
   }
   .active:hover {
-    background-color: rgba(0, 113, 235, .7);
+    background-color: rgba(0, 113, 235, 0.7);
   }
-  
+
   a:hover {
     background-color: rgba(8, 70, 157, 0.2);
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 600px) {
-  
   .nav.responsive {
     position: absolute;
     width: 100%;
@@ -795,12 +785,11 @@ li img {
     justify-content: unset;
   }
 
-  
   a {
     margin: auto 0px;
     text-decoration: none;
   }
-  
+
   .dropdowns button {
     width: auto;
     padding-left: 0;
@@ -810,12 +799,10 @@ li img {
     border-bottom: 2px solid gray;
   }
   .active:hover {
-    background-color: rgba(0, 113, 235, .7);
+    background-color: rgba(0, 113, 235, 0.7);
   }
-  
+
   a:hover {
     background-color: rgba(8, 70, 157, 0.2);
   }
 }
-
-
