@@ -148,6 +148,7 @@ button:hover {
   border-radius: 5px;
   border-color: deepskyblue;
   font-size: 15px;
+  width: 100%;
 }
 
 ::placeholder {
